@@ -46,8 +46,9 @@ def test(P1, P2, P3, age):
     Повертає готові тексти, які залишається намалювати у потрібному місці
     Використовує для текстів константи, задані на початку цього модуля."""
     if age < 7:
+        return (txt_index + "0", txt_nodata)  
     else:
-        ruff_index = ruffier_index(P1, P2, P3) 
+        ruff_index = ruffier_index(P1, P2, P3)  
         result = txt_res[ruffier_result(ruff_index, neud_level(age))] 
         res = txt_index + str(ruff_index) + "\n" + txt_workheart + result
         return res
